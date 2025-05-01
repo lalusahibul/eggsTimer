@@ -90,7 +90,7 @@ const stopTimer = () => {
   <div className="flex items-center justify-center min-h-screen p-9">
   <Card className="w-full max-w-[1000px] bg-yellow-300">
   <CardHeader>
-    <CardTitle className="text-lg">Lets Cook Eggs</CardTitle>
+    <CardTitle className="text-lg">Let&apos;s Cook Eggs</CardTitle>
     <CardDescription className="text-md">
       Choose your favorite boiled egg
     </CardDescription>
@@ -123,7 +123,7 @@ const stopTimer = () => {
         </div>
       </HoverCardTrigger>
       <HoverCardContent>
-        A medium yolk that’s slightly soft but firm enough to hold its own.
+        A medium yolk that&apos;s slightly soft but firm enough to hold its own.
       </HoverCardContent>
     </HoverCard>
     <HoverCard>
@@ -170,7 +170,7 @@ const stopTimer = () => {
       <AlertDialog open={dialogOpen} onOpenChange={setDialogOpen}>
   <AlertDialogContent>
     <AlertDialogHeader>
-      <AlertDialogTitle className="text-lg">Time"s up</AlertDialogTitle>
+      <AlertDialogTitle className="text-lg">Time&apos;s up</AlertDialogTitle>
       <AlertDialogDescription className="text-lg">
         Your eggs are cooked!
       </AlertDialogDescription>
