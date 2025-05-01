@@ -53,8 +53,8 @@ const Home = () => {
   }, []);
 
   // Mulai timer
- const startTimer = (minutes: number) => {
-  const seconds = minutes * 60;
+ const startTimer = (seconds: number) => {
+  //const seconds = minutes * 60;
   setDuration(seconds);
   setRemainingTime(seconds);
   setTimerRunning(true);
