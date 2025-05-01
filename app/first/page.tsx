@@ -2,34 +2,31 @@
 import {
   AlertDialog,
   AlertDialogAction,
-  AlertDialogCancel,
   AlertDialogContent,
   AlertDialogDescription,
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-  AlertDialogTrigger,
-} from '@/components/ui/alert-dialog';
-import * as React from 'react'
-import { Progress } from '@/components/ui/progress';
-import { SetStateAction, useEffect, useState } from 'react';
+} from "@/components/ui/alert-dialog";
+import * as React from "react"
+import { Progress } from "@/components/ui/progress";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import ImageCard from '@/components/ui/image-card';
+import ImageCard from "@/components/ui/image-card";
 import {
   HoverCard,
   HoverCardContent, 
   HoverCardTrigger,
-} from '@/components/ui/hover-card';
+} from "@/components/ui/hover-card";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 const First = () => {
-  const [currentTime, setCurrentTime] = useState(getCurrentTime());
+  const [, setCurrentTime] = useState(getCurrentTime());
   const [timerRunning, setTimerRunning] = useState(false);
   const [duration, setDuration] = useState(0);
   const [remainingTime, setRemainingTime] = useState(0);
@@ -40,9 +37,9 @@ const First = () => {
   // Fungsi waktu real-time
   function getCurrentTime() {
     const now = new Date();
-    const hours = String(now.getHours()).padStart(2, '0');
-    const minutes = String(now.getMinutes()).padStart(2, '0');
-    const seconds = String(now.getSeconds()).padStart(2, '0');
+    const hours = String(now.getHours()).padStart(2, "0");
+    const minutes = String(now.getMinutes()).padStart(2, "0");
+    const seconds = String(now.getSeconds()).padStart(2, "0");
     return `${hours}:${minutes}:${seconds}`;
   }
 
@@ -173,7 +170,7 @@ const stopTimer = () => {
       <AlertDialog open={dialogOpen} onOpenChange={setDialogOpen}>
   <AlertDialogContent>
     <AlertDialogHeader>
-      <AlertDialogTitle className="text-lg">Time's up</AlertDialogTitle>
+      <AlertDialogTitle className="text-lg">Time"s up</AlertDialogTitle>
       <AlertDialogDescription className="text-lg">
         Your eggs are cooked!
       </AlertDialogDescription>
