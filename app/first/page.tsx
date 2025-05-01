@@ -89,6 +89,7 @@ const stopTimer = () => {
   
   return (
 <>
+<div className="flex items-center justify-center min-h-screen p-4 md:p-9">
   <div className="flex items-center justify-center min-h-screen p-9">
   <Card className="w-full max-w-[1000px] bg-yellow-300">
   <CardHeader>
@@ -97,13 +98,13 @@ const stopTimer = () => {
       Choose your favorite boiled egg
     </CardDescription>
   </CardHeader>
-  <CardContent className="flex justify-center items-center gap-6">
+  <CardContent className="flex flex-wrap justify-center items-center gap-6">
     <HoverCard>
       <HoverCardTrigger asChild>
         <div className="flex flex-col items-center">
           <ImageCard 
             caption="Runny Yolk" 
-            className="p-4 max-w-full w-full w-[210px] h-[200px] bg-purple-400" 
+            className="p-4 w-full md:w-[210px] bg-purple-400" 
             imageUrl="/img/image1.png"
           ></ImageCard>
           <Button className="mt-2 bg-blue-300" onClick={() => startTimer(6)}>Start Boiling</Button>
@@ -118,7 +119,7 @@ const stopTimer = () => {
         <div className="flex flex-col items-center">
           <ImageCard 
             caption="Soft Boiled" 
-            className="p-4 max-w-full w-full w-[210px] h-[200px] bg-purple-400" 
+            className="p-4 w-full md:w-[210px] bg-purple-400" 
             imageUrl="/img/image2.png"
           ></ImageCard>
           <Button className="mt-2 bg-blue-300" onClick={() => startTimer(8)}>Start Boiling</Button>
@@ -133,7 +134,7 @@ const stopTimer = () => {
         <div className="flex flex-col items-center">
           <ImageCard 
             caption="Hard Boiled" 
-            className="p-4 max-w-full w-full w-[210px] h-[200px] bg-purple-400" 
+            className="p-4 w-full md:w-[210px] bg-purple-400" 
             imageUrl="/img/image3.png"
           ></ImageCard>
           <Button className="mt-2 bg-blue-300" onClick={() => startTimer(10)}>Start Boiling</Button>
@@ -148,7 +149,7 @@ const stopTimer = () => {
         <div className="flex flex-col items-center">
           <ImageCard 
             caption="Half Over Cooked" 
-            className="p-4 max-w-full w-full w-[210px] h-[200px] bg-purple-400" 
+            className="p-4 w-full md:w-[210px] bg-purple-400" 
             imageUrl="/img/image4.png"
           ></ImageCard>
           <Button className="mt-2 bg-blue-300" onClick={() => startTimer(12)}>Start Boiling</Button>
@@ -196,6 +197,7 @@ const stopTimer = () => {
   </CardContent>
 </Card>
 
+  </div>
   </div>
 </>
   );
